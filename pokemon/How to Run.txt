@@ -1,0 +1,17 @@
+Pokémon Toy Store Project
+
+Description about program:
+
+Program language used: Java programming language 
+IDE: Eclipse Java Neon 
+JAR Library: Junit jar 4.10
+
+
+How to execute Program:
+
+1. Project consists of two Source folders src folder and test folder.
+2. Go to test folder then open TestPokemonBuyer.java file.
+3. Run TestPokemonBuyer.java file using Junit Test.
+4. If you want to execute each example then click on that particular example name in program and then run using Junit Test.
+5. You can check your own example by adding code in TestPokemonBuyer.java and run using Junit Test. If the example is true then it generates Junit file otherwise it shows fail. 
+ 
