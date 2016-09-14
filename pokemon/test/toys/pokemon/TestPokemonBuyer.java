@@ -27,9 +27,6 @@ public class TestPokemonBuyer {
 		System.out.print(buyer.calculatePrize());
 	}
 	
-	
-	
-	
 	@Test
 	public void testExample3() {
 		
@@ -102,6 +99,7 @@ public class TestPokemonBuyer {
 		buyer.buy(TOY_TYPE.PIKACHU, 2);
 		buyer.buy(TOY_TYPE.SQUIRTLE, 1);
 		Assert.assertEquals(15.9d, buyer.calculatePrize(), 0);
+		System.out.print(buyer.calculatePrize());
 	}
 	
 	@Test
@@ -113,17 +111,28 @@ public class TestPokemonBuyer {
 		buyer.buy(TOY_TYPE.CHARMANDER, 1);
 		double prize = buyer.calculatePrize();
 		Assert.assertEquals(28.7, prize, 0);
+		System.out.print(buyer.calculatePrize());
+	}
+
+	
+	@Test
+	public void testExample11() {
+		
+		PokemonBuyer buyer = new PokemonBuyer();
+		buyer.buy(TOY_TYPE.PIKACHU, 3);
+		buyer.buy(TOY_TYPE.SQUIRTLE, 3);
+		buyer.buy(TOY_TYPE.CHARMANDER, 3);
+		double prize = buyer.calculatePrize();
+		Assert.assertEquals(38.4, prize, 0);
+		System.out.print(buyer.calculatePrize());
 	}
 	
 	@Test
-	public void testExample11_Negative() {
+	public void testExample12_Negative() {
 		PokemonBuyer buyer = new PokemonBuyer();
 		buyer.buy(TOY_TYPE.PIKACHU, 0);
 		Assert.assertNotNull(buyer.calculatePrize());
 	}
-	
-	
-	
 	
 	
 	
