@@ -7,7 +7,7 @@ import toys.pokemon.ToyStore.TOY_TYPE;
 
 public class TestPokemonBuyer {
 	
-	// Below are test examples
+	// Following are the test examples
 
 	@Test
 	public void testExample1() {
